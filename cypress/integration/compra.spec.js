@@ -71,6 +71,7 @@ context('Compra', () => {
         cy.readFile('cypress/fixtures/pedido.json').then((pedido)=>{
             cy.get('tr.first_item .history_link a')
             .should('contain.text',pedido.id);
+            //teste
         })
         
     });
